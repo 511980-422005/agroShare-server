@@ -208,9 +208,7 @@ server.get('/admin/clear',()=>{
     shareQuantity = 0;
     
 })
-
-const port = process.env.PORT || 4000;
-
-server.listen(port, 'localhost', () => {
-    console.log(`Server is running at http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
